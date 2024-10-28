@@ -1,0 +1,61 @@
+
+// album
+
+.album {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .left-album {
+        width: 50%;
+        background: #5e5a5a;
+        height: 50vh;
+        overflow: scroll;
+        overflow-x: hidden;
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 10px;
+        .song {
+            display: flex;
+            flex-direction: column;
+            p {
+                margin-bottom: 10px;
+                color: #fff;
+                font-size: 18px;
+            }
+    
+            audio {
+                width: 100%;
+            }
+        }
+    }
+
+    .right-album {
+       width: 35%;
+
+       img {
+        width: 350px;
+        height: 350px; 
+        border-radius: 50%;     
+        margin-left: 20px;
+        position: relative;
+        user-select: none;
+        animation: rotate 10s linear infinite;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+        
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    }
+
+    
+}

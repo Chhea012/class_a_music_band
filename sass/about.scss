@@ -4,6 +4,9 @@ body {
 
 @import 'components/__navbar';
 @import 'components/_about-us';
+@import 'components/__album';
+@import 'components/__event_video';
+@import 'components/__team';
 
 .banner {
     background-image: url('../images/banner.png');
