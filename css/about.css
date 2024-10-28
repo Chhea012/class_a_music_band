@@ -293,7 +293,7 @@ ul a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 47px;
+  justify-content: center;
 }
 .container .card {
   width: 250px;
@@ -337,6 +337,15 @@ ul a {
 .container .card .text button:hover {
   background: #fff;
   color: orangered;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
 }
 
 .banner {
