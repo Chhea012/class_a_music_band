@@ -1,8 +1,9 @@
 // event
 
+@import '__mixin';
 .container {
     display: flex;
-    flex-direction: row;
+    @include row;
     flex-wrap: wrap;
     justify-content: center;
 
@@ -11,9 +12,10 @@
         margin-bottom: 20px;
         background: #5e5a5a;
         border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         padding: 20px;
         display: flex;
-        flex-direction: column;
+        @include column;
         align-items: center;
         transition: transform 0.5s;
         margin: 10px;
@@ -35,12 +37,14 @@
 
         .text {
             margin-top: 20px;
-            color: #fff;
+            color: $color;
 
             button {
                 margin-top: 10px;
                 padding: 10px 20px;
-                background: orangered;
+                font-family: 'Nunito';
+                font-weight: bold;
+                background: $head-color;
                 color: #fff;
                 border: none;
                 border-radius: 5px;
@@ -48,8 +52,8 @@
                 margin-bottom: 20px;
 
                 &:hover {
-                    background: #fff;
-                    color: orangered;
+                    background: $color;
+                    color: $head-color;
                 }
             }
         }

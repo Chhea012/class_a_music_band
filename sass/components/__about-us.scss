@@ -1,13 +1,13 @@
+@import '__mixin';
 
 .heading {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include center;
+    @include column;
     h1 {
-        color: orangered;
+        color: $head-color;
         text-align: center;
         margin-top: 50px;
+        font-family: 'roboto mono';
         font-weight: bold;
         text-decoration: underline;
         
@@ -16,7 +16,7 @@
 
 .about {
     display: flex;
-    flex-direction: row;
+    @include row;
     flex-wrap: wrap;
     align-items: center;
     .about-left {
@@ -33,19 +33,20 @@
     .about-right {
         width: 50%;
         p {
-            color: #fff;
+            color: $color;
             margin-right: 50px;
         }
 
         span {
             
-            background: orangered;
+            background: $head-color;
+            font-family: 'Nunito';
             display: flex;
             justify-content: start;
             align-items: center;
             width: 100px;
             padding: 8px 15px;
-            color: #fff;
+            color: $color;
             font-weight: bold;
             border: none;
             border-radius: 5px;
@@ -53,7 +54,7 @@
             
         }
         span:hover {
-            background: #fff;
+            background: $color;
             color: #000;
         }
     }
