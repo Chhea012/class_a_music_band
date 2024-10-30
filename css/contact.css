@@ -665,6 +665,39 @@ footer {
   .contact-us-container .card {
     width: 78%;
   }
+  .container-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+  }
+  .container-6 .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 77%;
+    height: 120vh;
+    background-color: #222;
+    border-radius: 15px;
+    padding: 15px;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+  .container-6 .social-media img:hover {
+    background-color: blue;
+    transform: scale(0.9);
+  }
+  .container-6 .social-media img {
+    vertical-align: middle;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    padding: 15px;
+    transition: transform 0.4s;
+    border-radius: 15%;
+  }
 }
 @media (max-width: 480px) {
   nav {
