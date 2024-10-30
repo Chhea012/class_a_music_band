@@ -1,13 +1,13 @@
+@import '__mixin';
 
 .heading {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include center;
+    @include column;
     h1 {
-        color: orangered;
+        color: $head-color;
         text-align: center;
         margin-top: 50px;
+        font-family: 'roboto mono';
         font-weight: bold;
         text-decoration: underline;
         
@@ -16,7 +16,7 @@
 
 .about {
     display: flex;
-    flex-direction: row;
+    @include row;
     flex-wrap: wrap;
     align-items: center;
     .about-left {
@@ -33,19 +33,20 @@
     .about-right {
         width: 50%;
         p {
-            color: #fff;
+            color: $color;
             margin-right: 50px;
         }
 
         span {
             
-            background: orangered;
+            background: $head-color;
+            font-family: 'Nunito';
             display: flex;
             justify-content: start;
             align-items: center;
             width: 100px;
             padding: 8px 15px;
-            color: #fff;
+            color: $color;
             font-weight: bold;
             border: none;
             border-radius: 5px;
@@ -53,70 +54,8 @@
             
         }
         span:hover {
-            background: #fff;
+            background: $color;
             color: #000;
         }
     }
-}
-
-
-// album
-
-.album {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 20px;
-
-    .left-album {
-        width: 50%;
-        background: #5e5a5a;
-        height: 50vh;
-        overflow: scroll;
-        overflow-x: hidden;
-        padding: 20px;
-        margin-top: 20px;
-        border-radius: 10px;
-        .song {
-            display: flex;
-            flex-direction: column;
-            p {
-                margin-bottom: 10px;
-                color: #fff;
-                font-size: 18px;
-            }
-    
-            audio {
-                width: 100%;
-            }
-        }
-    }
-
-    .right-album {
-       width: 35%;
-
-       img {
-        width: 350px;
-        height: 350px; 
-        border-radius: 50%;     
-        margin-left: 50px;
-        position: relative;
-        user-select: none;
-        animation: rotate 10s linear infinite;
-        }
-
-        @keyframes rotate {
-            0% {
-                transform: rotate(0deg);
-            }
-        
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-    }
-
-    
 }
