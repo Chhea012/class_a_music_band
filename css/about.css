@@ -850,7 +850,7 @@ footer {
   .footer {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     flex-direction: column;
     background: #111;
     width: 100%;
