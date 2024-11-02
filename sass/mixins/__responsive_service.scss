@@ -749,42 +749,42 @@
         }
     }
 
-    .container-6 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 10%;
-
-        .social-media {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 90%;
-            height: 100vh;
-            background-color: $bg-color-222;
-            border-radius: 15px;
-            padding: 15px;
-            gap: 25px;
-            flex-wrap: wrap;
-        }
-
-        .social-media img:hover {
-            background-color: $bg-color-blue;
-            transform: scale(0.9);
-        }
-
-        .social-media img {
-            vertical-align: middle;
-            object-fit: cover;
-            width: 90px;
-            height: 90px;
-            background-color: $bg-color-white;
-            padding: 15px;
-            transition: transform 0.4s;
-            border-radius: 15%;
-        }
-    }
-
+         .container-6 {
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             margin-top: 10%;
+         }
+    
+         .container-6 .social-media {
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             width: 90%;
+             height: 30vh;
+             background-color: $bg-color-222;
+             border-radius: 15px;
+             padding: 15px;
+             gap: 25px;
+             flex-wrap: wrap;
+         }
+    
+         .container-6 .social-media img:hover {
+             background-color: $bg-color-blue;
+             transform: scale(0.9);
+         }
+    
+         .container-6 .social-media img {
+             vertical-align: middle;
+             -o-object-fit: cover;
+             object-fit: cover;
+             width: 70px;
+             height: 70px;
+             background-color: $bg-color-white;
+             padding: 15px;
+             transition: transform 0.4s;
+             border-radius: 15%;
+         }
     //footer code............
     footer {
         text-align: center;

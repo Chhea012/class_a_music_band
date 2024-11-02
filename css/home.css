@@ -93,9 +93,12 @@ ul a {
 }
 
 .btn a {
-  color: white;
+  color: rgb(0, 0, 0);
   font-weight: bold;
   text-decoration: none;
+}
+.btn a:hover{
+  color: white;
 }
 
 .btn1 {
@@ -154,6 +157,7 @@ ul a {
   background: orangered;
   z-index: -1;
   transition: 0.8s;
+  color: white;
 }
 .button .btn4::before {
   bottom: 0;
@@ -1035,15 +1039,15 @@ figure {
   }
   .shape {
     position: absolute;
-    margin-top: 45%;
+    margin-top: 33%;
     margin-left: 10%;
     width: 80%;
-    height: 20vh;
+    height: 10vh;
     background-color: #000;
   }
   .animated-text {
     position: absolute;
-    margin-top: 45%;
+    margin-top: 35%;
     margin-left: 22%;
     font-size: 25px;
     font-weight: 600;
@@ -1559,7 +1563,7 @@ figure {
     flex-direction: column;
     background: #111;
     width: 100%;
-    height: 190vh;
+    height: 160vh;
     margin-top: 10%;
     color: white;
   }
@@ -1651,7 +1655,7 @@ figure {
   }
   .form {
     width: 100%;
-    height: 70vh;
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: start;
@@ -1749,7 +1753,7 @@ figure {
   }
   .shape {
     position: absolute;
-    margin-top: 25%;
+    margin-top: 55%;
     margin-left: 10%;
     width: 80%;
     height: 20vh;
@@ -1757,9 +1761,9 @@ figure {
   }
   .animated-text {
     position: absolute;
-    margin-top: 30%;
+    margin-top: 65%;
     margin-left: 22%;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 600;
     min-width: 280px;
   }
@@ -2243,8 +2247,8 @@ figure {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 77%;
-    height: 120vh;
+    width: 80%;
+    height: 30vh;
     background-color: #222;
     border-radius: 15px;
     padding: 15px;
@@ -2258,9 +2262,9 @@ figure {
   .container-6 .social-media img {
     vertical-align: middle;
     -o-object-fit: cover;
-       object-fit: cover;
-    width: 100px;
-    height: 100px;
+    object-fit: cover;
+    width: 70px;
+    height: 70px;
     background-color: white;
     padding: 15px;
     transition: transform 0.4s;
@@ -2287,7 +2291,7 @@ figure {
   .footer .about {
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     flex-direction: column;
     gap: 20px;
     margin: 20px;
@@ -2365,6 +2369,7 @@ figure {
     border: none;
     color: white;
     font-size: 20px;
+    width: 100%;
     padding: 10px 30px;
     border-radius: 5px;
     transition: transform 0.3s;
